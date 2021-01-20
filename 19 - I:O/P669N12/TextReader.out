@@ -1,0 +1,26 @@
+1: import java.io.*;
+2: import java.util.*;
+3: public class TextReader {
+4:  public static void main(String[] args) throws IOException{
+5:   List<String> textList = new LinkedList<String>();
+6:   BufferedReader in = new BufferedReader(new FileReader(args[0]));
+7:   String s;
+8:   while((s = in.readLine()) != null) {
+9:    textList.add(s);
+10:   }
+11:   String file = "TextReader.out";
+12:   PrintWriter out = new PrintWriter(file);
+13:   in.close();
+14:   ListIterator<String> it = textList.listIterator(textList.size());
+15:   while (it.hasPrevious()) {
+16:    System.out.println(it.previous());
+17:   }
+18:   System.out.println("_________________________________________");
+19:   int linecount = 1;
+20:   for(String str: textList) {
+21:     out.println(linecount++ + ": " + str);
+22:   }
+23:   out.close();
+24:   System.out.println(BufferedInputFile.read(file));
+25:  }
+26: }

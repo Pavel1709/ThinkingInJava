@@ -1,0 +1,1 @@
+public class BatMan extends GoodGuy {}

@@ -1,0 +1,38 @@
+1: //: io/BasicFileOutput.java
+2: import java.io.*;
+3: 
+4: public class BasicFileOutput {
+5:   static String file = "BasicFileOutput.out";
+6:   public static void main(String[] args) throws IOException {
+7:     Long l = System.currentTimeMillis();
+8:     BufferedReader in = new BufferedReader(
+9:       new StringReader(
+10:         BufferedInputFile.read("BasicFileOutput.java")));
+11:     PrintWriter out = new PrintWriter(
+12:       new BufferedWriter(new FileWriter(file)));
+13:     int lineCount = 1;
+14:     String s;
+15:     while((s = in.readLine()) != null )
+16:       out.println(lineCount++ + ": " + s);
+17:     out.close();
+18:     // Show the stored file:
+19:     System.out.println(BufferedInputFile.read(file));
+20:    System.out.println(System.currentTimeMillis() - l);
+21:    System.out.println("______________________________");
+22:   Long ll = System.currentTimeMillis();
+23:  
+24:     LineNumberReader inn = new LineNumberReader(
+25:       new StringReader(
+26:         BufferedInputFile.read("BasicFileOutput.java")));
+27:     PrintWriter outt = new PrintWriter(
+28:       new BufferedWriter(new FileWriter(file)));
+29:     int lineCounts = 1;
+30:     String ss;
+31:     while((ss = inn.readLine()) != null )
+32:       outt.println(lineCounts++ + ": " + ss);
+33:     outt.close();
+34:     // Show the stored file:
+35:     System.out.println(BufferedInputFile.read(file));
+36:    System.out.println(System.currentTimeMillis() - ll);
+37:   }
+38: } 

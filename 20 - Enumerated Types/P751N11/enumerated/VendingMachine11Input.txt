@@ -1,0 +1,2 @@
+Money:Nickel(5),Dime(10),Quarter(25),Dollar(100);Selection:Soda(100),Juice(125),
+HotChocolate(100),Coffee(145),CandyBar(90);VendingEvent:AbortTransaction,Stop,

@@ -1,0 +1,1 @@
+public class SpiderMan extends GoodGuy {}

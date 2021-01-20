@@ -1,0 +1,1 @@
+public class Joker extends BadGuy {}

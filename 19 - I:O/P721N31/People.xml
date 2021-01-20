@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<people>
+    <person>
+        <first>Dr. Bunsen</first>
+        <last>Honeydew</last>
+        <address>80th Roud 625</address>
+    </person>
+    <person>
+        <first>Gonzo</first>
+        <last>The Great</last>
+        <address>Rossolimo 17</address>
+    </person>
+    <person>
+        <first>Phillip J.</first>
+        <last>Fry</last>
+        <address>Pokrovskiy Bulvar 13</address>
+    </person>
+</people>
